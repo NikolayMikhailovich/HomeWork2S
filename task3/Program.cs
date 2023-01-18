@@ -16,8 +16,8 @@ if (5 < numberday && numberday < 8)
 {
   Console.WriteLine("День является выходным");
 }
-else System.Console.WriteLine("День будний");
-if (numberday < 1 && numberday > 7)
+else
 {
-  Console.WriteLine("Это не день недели");
+  if (numberday < 6)
+  Console.WriteLine("День будний");
 }
