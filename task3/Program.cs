@@ -1,26 +1,18 @@
 ﻿// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, 
 //является ли этот день выходным.
-int InputInt(string message)
-{
-  Console.WriteLine(message + " > ");
-  string? inputValue = Console.ReadLine();
-  int result = Convert.ToInt32(inputValue);
-  return result;
-}
 
-bool ValidateNumberDay(int number)
+Console.WriteLine("введите номер дня недели");
+string dayofweek = Console.ReadLine();
+int numberday = Convert.ToInt32(dayofweek);
+if (numberday < 8 && numberday > 0)
 {
-  if (number > 5 && number < 8)
-  {
-    return true;
-  }
-  System.Console.WriteLine("День не выходной");
-  return false;
-}
+  string[] weeks = new string[7] { "понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье" };
+  System.Console.WriteLine(weeks[numberday - 1]);
 
-int number = InputInt("Введите день недели");
-if (ValidateNumberDay(number))
-{
-  int Day = number;
-  Console.WriteLine("День выходной");
 }
+else System.Console.WriteLine("это не день недели");
+if (numberday > 5 )
+{
+  System.Console.WriteLine("День является выходным");
+}
+else System.Console.WriteLine("День не выходной");
