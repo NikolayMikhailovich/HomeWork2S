@@ -10,9 +10,9 @@ if (numberday < 8 && numberday > 0)
   System.Console.WriteLine(weeks[numberday - 1]);
 
 }
-else System.Console.WriteLine("это не день недели");
-if (numberday > 5 )
+else System.Console.WriteLine("Это не день недели");
+if (5 < numberday && numberday < 8)
 {
   System.Console.WriteLine("День является выходным");
 }
-else System.Console.WriteLine("День не выходной");
+
