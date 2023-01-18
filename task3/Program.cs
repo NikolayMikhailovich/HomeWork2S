@@ -19,5 +19,9 @@ if (5 < numberday && numberday < 8)
 else
 {
   if (numberday < 6)
-  Console.WriteLine("День будний");
+    Console.WriteLine("День будний");
+
+  else
+
+    System.Console.WriteLine("ОШИБКА");
 }
